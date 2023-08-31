@@ -1,0 +1,10 @@
+<div class="vh-100 d-flex justify-content-center align-items-center">
+  <div>
+    <form>
+      <input type="text" id="email" class="fadeIn second form-control mb-3" name="email" placeholder="email" [(ngModel)]="email" >
+      <input type="text" id="password" class="fadeIn third form-control mb-3" name="password" placeholder="password" [(ngModel)]="password">
+      <button class="fadeIn fourth btn btn-primary w-100" value="Log In" (click)="login()">Log In</button>
+      <span class="text-primary cursor-pointer" (click)="redirectSignUp()">Sign Up</span>
+    </form>
+  </div>
+</div>

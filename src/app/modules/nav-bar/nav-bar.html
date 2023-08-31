@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink='/delivery-schedule' routerLinkActive="router-link-active"  routerLinkActive="router-link-active">Deliveries</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/delivery-schedule/new' routerLinkActive="nav-link active">New Delivery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/location/new' routerLinkActive="nav-link active">New Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/product-category/new' routerLinkActive="nav-link active">New Product Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cursor-pointer" (click)="logOut()">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

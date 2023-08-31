@@ -1,0 +1,21 @@
+<div class="vh-100 d-flex justify-content-center align-items-center">
+  <div>
+    <form>
+      <input type="text" id="name" class="fadeIn second form-control mb-3" name="name" placeholder="name" [(ngModel)]="name">
+      <input type="text" id="lastName" class="fadeIn second form-control mb-3" name="lastName" placeholder="lastName" [(ngModel)]="lastName">
+      <input type="text" id="email" class="fadeIn second form-control mb-3" name="email" placeholder="email" [(ngModel)]="email" >
+      <input type="text" id="password" class="fadeIn third form-control mb-3" name="password" placeholder="password" [(ngModel)]="password">
+      <div class="w-100 d-flex justify-content-between">
+        <label>
+          <input type="radio" name="options" id="option1" [value]="0"
+          [(ngModel)]="role"> Admin
+        </label>
+        <label class="">
+          <input type="radio" name="options" id="option2" [value]="1"
+          [(ngModel)]="role"> Client
+        </label>
+      </div>
+      <button class="fadeIn fourth btn btn-primary w-100 mt-3" value="Log In" (click)="signUp()">Log In</button>
+    </form>
+  </div>
+</div>

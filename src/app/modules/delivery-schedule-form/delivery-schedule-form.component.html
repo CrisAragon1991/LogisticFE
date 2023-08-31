@@ -1,0 +1,37 @@
+<nav-bar></nav-bar>
+<div class="vh-100 d-flex justify-content-center align-items-center">
+  <div>
+    <h1>New Delivery Schedule</h1>
+    <form>
+        <div class="mb-3">
+          <ng-select [(ngModel)]="productCategoryId" name="productCategory">
+            <ng-option *ngFor="let product of products" [value]="product.productCategoryId">{{product.name}}</ng-option>
+          </ng-select>
+        </div>
+
+        <input type="number" id="productQuantity" class="fadeIn second form-control mb-3" name="productQuantity" placeholder="product Quantity" [(ngModel)]="productQuantity" >
+
+        <input type="date" id="deliveryDate" class="fadeIn second form-control mb-3" name="deliveryDate" placeholder="Delivery Date" [(ngModel)]="deliveryDate">
+
+        <div class="mb-3">
+          <ng-select [(ngModel)]="locationId" name="location">
+            <ng-option *ngFor="let location of locations" [value]="location.locationId">{{location.name}}</ng-option>
+          </ng-select>
+        </div>
+
+        <input type="number" id="price" class="fadeIn second form-control mb-3" name="price" placeholder="price" [(ngModel)]="price" >
+
+        <input type="text" id="transportId" class="fadeIn second form-control mb-3" name="transportId" placeholder="transport" [(ngModel)]="transportId" >
+
+        <input type="text" id="guideNumber" class="fadeIn second form-control mb-3" name="guideNumber" placeholder="Guide Number" [(ngModel)]="guideNumber" >
+
+        <div class="mb-3">
+          <ng-select [(ngModel)]="userId" name="user">
+            <ng-option *ngFor="let user of users" [value]="user.userId">{{user.name + ' ' + user.lastName}}</ng-option>
+          </ng-select>
+        </div>
+
+      <button class="fadeIn fourth btn btn-primary w-100 mt-3" value="Log In" (click)="registerDelivery()">Register Location</button>
+    </form>
+  </div>
+</div>

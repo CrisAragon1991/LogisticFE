@@ -1,0 +1,20 @@
+<nav-bar></nav-bar>
+<div class="vh-100 d-flex justify-content-center align-items-center">
+  <div>
+    <h1>New location</h1>
+    <form>
+        <input type="text" id="name" class="fadeIn second form-control mb-3" name="name" placeholder="name" [(ngModel)]="name" >
+        <div class="w-100 d-flex justify-content-between">
+          <label>
+            <input type="radio" name="options" id="option1" [value]="1"
+            [(ngModel)]="locationType"> Store
+          </label>
+          <label >
+            <input type="radio" name="options" id="option2" [value]="2"
+            [(ngModel)]="locationType"> Port
+          </label>
+        </div>
+      <button class="fadeIn fourth btn btn-primary w-100 mt-3" value="Log In" (click)="registerLocation()">Register Location</button>
+    </form>
+  </div>
+</div>
